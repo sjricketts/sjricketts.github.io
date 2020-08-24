@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Latitude Analysis Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Latitude Analysis Dashboard</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="LatVsMaxTemp.html">Max Temp</a>
+                                <a class="dropdown-item" href="LatVsHumidity.html">Humidity</a>
+                                <a class="dropdown-item" href="LatVsCloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="LatVsWindiness.html">Windiness</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparisions.html">Comparisions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="box">
+                    <h2>Wind Speeds</h2>
+                    <hr />
+                    <img src="visualizations/WindVsLat.png" alt="A scatter plot of windiness versus latitude"
+                        id="responsive_img" />
+                    <p>Based on the data collected, there does not appear to be any relationship between a city's
+                        proximity to the equator and wind speeds. As the visualization demonstrates, wind speeds are
+                        fairly consistent at all latitudes. While there appears to be two outliers of greater wind speeds (between 0 and 20
+                        degrees latitude), they are just that: outliers. This would indicate factors other than latitude are likely more predictive of a
+                        city's wind speed.</p>
+                </div>
+            </div>
+            <div class="row col-md-4">
+                <div class="box">
+                    <h2>Visualizations</h2>
+                    <hr />
+                    <div class="row-col-md-2">
+                        <a href="LatVsMaxTemp.html">
+                            <img src="visualizations/MaxTempVsLat.png"
+                                alt="A scatter plot of maximum temeratures versus latitude" width="160" height="160" />
+                        </a>
+                        <a href="LatVsHumidity.html">
+                            <img src="visualizations/HumidityVsLat.png" alt="A scatter plot of humidty versus latitude"
+                                width="160" height="160" />
+                        </a>
+                        <a href="LatVsCloudiness.html">
+                            <img src="visualizations/CloudsVsLat.png" alt="A scatter plot of cloudiness versus latitude"
+                                width="160" height="160" />
+                        </a>
+                        <a href="LatVsWindiness.html">
+                            <img src="visualizations/WindVsLat.png" alt="A scatter plot of windiness versus latitude"
+                                width="160" height="160" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
